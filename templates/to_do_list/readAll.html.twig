@@ -1,0 +1,7 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+	{% for todolist in lists %}
+		<p style="color : {{todolist.color}}">{{todolist.name}}</p>
+	{% endfor %}
+
+{% endblock %}
